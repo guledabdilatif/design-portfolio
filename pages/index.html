@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="../Assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Assets/images/favicon@2x-100.jpg" type="image/x-icon">
 
     <title>Portfolio | Abdiladif Mohamud</title>
 </head>
@@ -22,13 +22,12 @@
         <!-- --------------- HEADER --------------- -->
         <nav id="header">
             <div class="nav-logo">
-                <p class="nav-name">ABDILADIF MOHAMUD</p>
-                <span>.</span>
+                <p class="nav-name"><a href="#home" class="nav-name">ABDILADIF MOHAMUD</a></p>
             </div>
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
                     <li class="nav_list">
-                        <a href="#home" class="nav-link active-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
@@ -46,7 +45,8 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn"><a href="../Assets/images/My-CV.pdf" download="">Download CV <i class="uil uil-file-alt"></i></a></button>
+                <button class="btn"><a href="../Assets/images/My-CV.pdf" download="">Download CV <i
+                            class="uil uil-file-alt"></i></a></button>
             </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -72,18 +72,23 @@
                     </div>
                     <div class="featured-text-btn">
                         <button class="btn blue-btn">Hire Me</button>
-                        <button class="btn" href="">Download CV <i class="uil uil-file-alt"></i></button>
+                        <button class="btn"> <a href="../Assets/images/my-CV.pdf" download>Download CV <i
+                                    class="uil uil-file-alt"></i></a></button>
                     </div>
                     <div class="social_icons">
-                        <div class="icon"><a href=""><i class="uil uil-instagram"></i></a></div>
-                        <div class="icon"><a href=""><i class="uil uil-linkedin-alt"></i></a></div>
-                        <div class="icon"><a href=""><i class="uil uil-envelope"></i></a></div>
-                        <div class="icon"><a href=""><i class="uil uil-github-alt"></i></a></div>
+                        <div class="icon"><a href="https://wa.me/+254723710285"><i class="uil uil-whatsapp"></i></a>
+                        </div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/abdilatif-mohamud-98270923b/"><i
+                                    class="uil uil-linkedin-alt"></i></a></div>
+                        <div class="icon"><a href="mailto:guledabdilatif@gmail.com"><i class="uil uil-envelope"></i></a>
+                        </div>
+                        <div class="icon"><a href="https://github.com/guledabdilatif/"><i
+                                    class="uil uil-github-alt"></i></a></div>
                     </div>
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="../Assets/images/avatar.png" alt="avatar">
+                        <img src="../Assets/images/image.png" alt="avatar">
                     </div>
                 </div>
                 <div class="scroll-icon-box">
@@ -108,7 +113,8 @@
                                 frameworks and libraries,which allows me to implement interactive features.
                             </p>
                             <div class="about-btn">
-                                <button class="btn"><a href="">Download CV <i class="uil uil-import"></i></a></button>
+                                <button class="btn"><a href="../Assets/images/my-CV.pdf" download>Download CV <i
+                                            class="uil uil-import"></i></a></button>
                             </div>
                         </div>
                     </div>
@@ -171,7 +177,42 @@
                     </div>
                 </div>
             </section>
- <!-- -------------- CONTACT BOX ---------------- -->
+            <p style="text-align: center; cursor: pointer; color: blue;" id="more-btn">View more projects</p>
+            <section class="slider-container" id="slider-container">
+                <div class="card">
+                    <img src="../Assets/images/img-4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat iusto porro dolores vero
+                        velit dolorem libero minima</p>
+                </div>
+                <div class="card">
+                    <img src="../Assets/images/img-4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat iusto porro dolores vero
+                        velit dolorem libero minima.</p>
+                </div>
+                <div class="card">
+                    <img src="../Assets/images/img-4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat iusto porro dolores vero
+                        velit dolorem libero minima.</p>
+                </div>
+                <div class="card">
+                    <img src="../Assets/images/img-4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat iusto porro dolores vero
+                        velit dolorem libero minima.</p>
+                </div>
+                <div class="card">
+                    <img src="../Assets/images/img-4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat iusto porro dolores vero
+                        velit dolorem libero minima.</p>
+                </div>
+                <div class="card">
+                    <img src="../Assets/images/img-4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat iusto porro dolores vero
+                        velit dolorem libero minima.</p>
+                </div>
+                
+                
+            </section>
+            <!-- -------------- CONTACT BOX ---------------- -->
 
             <section class="section" id="contact">
                 <div class="top-header">
@@ -189,15 +230,18 @@
                     <div class="col">
                         <form action="https://api.web3forms.com/submit" method="POST" class="form-control" id="myForm">
                             <div class="form-inputs">
-                                <input type="text" name="name" id="nameInput" class="input-field" placeholder="Name" required>
-                                <input type="text" class="input-field" id="emailInput" placeholder="Email" name="email" required>
+                                <input type="text" name="name" id="nameInput" class="input-field" placeholder="Name"
+                                    required>
+                                <input type="text" class="input-field" id="emailInput" placeholder="Email" name="email"
+                                    required>
                                 <input type="hidden" name="access_key" value="4558d96b-7737-4239-80e4-f3462e986684">
                             </div>
                             <div class="text-area">
                                 <textarea placeholder="Message" name="message" required id="textareaInput"></textarea>
                             </div>
                             <div class="form-button">
-                                <button class="btn" type="submit" onclick="resetForm()">Send <i class="uil uil-message"></i></button>
+                                <button class="btn" type="submit" onclick="resetForm()">Send <i
+                                        class="uil uil-message"></i></button>
                             </div>
                         </form>
                     </div>
@@ -229,10 +273,12 @@
                 </ul>
             </div>
             <div class="footer-social-icons">
-                <div class="icon"><a href=""><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href=""><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href=""><i class="uil uil-envelope"></i></a></div>
-                <div class="icon"><a href=""><i class="uil uil-github-alt"></i></a></div>
+                <div class="icon"><a href="https://wa.me/+254723710285"><i class="uil uil-whatsapp"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/abdilatif-mohamud-98270923b/"><i
+                            class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href="mailto:guledabdilatif@gmail.com"><i class="uil uil-envelope"></i></a></div>
+                <div class="icon"><a href="https://github.com/guledabdilatif/"><i class="uil uil-github-alt"></i></a>
+                </div>
             </div>
             <div class="bottom-footer">
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none;">ABDILADIF MOHAMUD</a> - All rights

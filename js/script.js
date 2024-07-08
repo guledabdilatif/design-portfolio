@@ -8,7 +8,16 @@ function myMenuFunction() {
     menuBtn.className = "nav-menu";
   }
 }
-
+// FUNCTION TO DISPLAY MORE
+function displayMore(){
+  const moreBtn= document.getElementById("more-btn");
+  const sliderContainer= document.getElementById("slider-container");
+  moreBtn.addEventListener('click', ()=>{
+    sliderContainer.style.display='flex';
+    moreBtn.style.display="none"
+  })
+}
+displayMore()
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () { headerShadow() };
 
