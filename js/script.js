@@ -8,13 +8,16 @@ function myMenuFunction() {
     menuBtn.className = "nav-menu";
   }
 }
+
+
+
 // FUNCTION TO DISPLAY MORE
-function displayMore(){
-  const moreBtn= document.getElementById("more-btn");
-  const sliderContainer= document.getElementById("slider-container");
-  moreBtn.addEventListener('click', ()=>{
-    sliderContainer.style.display='flex';
-    moreBtn.style.display="none"
+function displayMore() {
+  const moreBtn = document.getElementById("more-btn");
+  const sliderContainer = document.getElementById("slider-container");
+  moreBtn.addEventListener('click', () => {
+    sliderContainer.style.display = 'flex';
+    moreBtn.style.display = "none"
   })
 }
 displayMore()
@@ -54,7 +57,7 @@ function resetForm() {
 resetForm()
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Graphic Designer", "Developer"],
+  strings: ["Graphic Designer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,

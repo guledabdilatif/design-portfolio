@@ -656,7 +656,25 @@ footer {
     margin-left: 10px;
 
 }
-
+/* overflow styling */
+::-webkit-scrollbar {
+    width: 10px;
+    border: 1px solid transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: blue;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: blue;
+    cursor: pointer;
+  }
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
     .featured-text {
